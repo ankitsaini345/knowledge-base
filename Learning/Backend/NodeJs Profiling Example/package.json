@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "doctor": "clinic doctor --autocannon [ http://localhost:3000/slow ] -- node server.js",
     "doctorWithPool": "clinic doctor --autocannon [ http://localhost:3000/slow ] -- node serverWithWorkerPool.js",
-    "flame": "clinic flame --autocannon [ http://localhost:3000/slow ] -- node server.js"
+    "flame": "clinic flame --autocannon [ http://localhost:3000/slow ] -- node server.js",
+    "leak": "clinic bubbleprof --autocannon [ http://localhost:3000/slow ] -- node leak.js"
   },
   "keywords": [],
   "author": "",
